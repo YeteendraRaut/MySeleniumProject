@@ -40,7 +40,8 @@ public class testNGtwo {
 		    
 		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));*/
 		    
-		    driver.findElement(By.xpath("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]")).click();
+		  //  driver.findElement(By.xpath("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]")).click();
+		    common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
 		    Thread.sleep(2000);
 		    boolean flag=driver.findElement(By.xpath("//span[@class=\"jsx-214020999 jsx-177278739 typography-body-regular-m universe-tab ml16 \"]")).isDisplayed();
 		    Assert.assertTrue(flag);
